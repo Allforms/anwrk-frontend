@@ -1,0 +1,149 @@
+/* Base styles */
+.why-choose-anwrk {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.features-header {
+  margin-bottom: 2rem;
+}
+
+.features-tag {
+  display: inline-flex; /* Use inline-flex for proper alignment */
+  align-items: center; /* Vertically align items within the span */
+  font-size: 0.675rem;
+  color: #595858;
+  background-color: rgba(255, 228, 215, 0.902);
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  gap: 0.5rem; /* Add spacing between the icon and text */
+  box-shadow: 0 0 1px #fe6316;
+}
+
+.features-tag img {
+  margin: 0;
+}
+
+.features-header h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #000;
+}
+
+.highlight {
+  background-image: linear-gradient(1deg, #fe6316 26%, #8768fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features-header p {
+  font-size: 1rem;
+  color: #666666;
+}
+
+/* Features grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.features-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 3rem;
+  padding: 85px 85px; /* Adjust horizontal and vertical padding */
+  padding-top: 20px; /* Reduces top padding */
+  justify-content: center; /* Centers the grid horizontally */
+  align-items: center; /* Centers the grid vertically */
+}
+.features-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Two columns */
+  gap: 1.5rem;
+}
+
+.features-grid .feature-item:hover {
+  background-color: #ff9c6b; /* Change background color on hover */
+}
+
+.feature-item {
+  text-align: center;
+  background-color: #fffefe;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 1px rgb(201, 198, 198);
+}
+
+.rating-image {
+  width: auto;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 450px;
+}
+.features-grid-2 .feature-image {
+  width: 363px;
+  height: 213px;
+  max-width: 450px;
+}
+
+.feature-item h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333333;
+  text-align: left;
+}
+.feature-item h4 {
+  margin: 0;
+  color: #333333;
+  text-align: left;
+}
+
+.feature-item h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333333;
+  text-align: left;
+}
+
+.feature-item p {
+  font-size: 0.95rem;
+  color: #666666;
+  text-align: left;
+}
+
+.features-grid .feature-item:hover h3,
+.features-grid .feature-item:hover p {
+  color: #ffffff; /* Change text color to white */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .features-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  .features-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0;
+  }
+
+  .features-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .features-header p {
+    font-size: 0.875rem;
+  }
+}

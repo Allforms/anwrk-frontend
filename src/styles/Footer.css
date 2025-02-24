@@ -1,0 +1,97 @@
+.footer {
+  background-color: #fff;
+  padding: 2rem 1rem; /* Adjust padding for spacing */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align all sections to the top */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 2rem; /* Space between sections */
+}
+
+.footer-section {
+  flex: 1; /* Shared equal width */
+  min-width: 150px; /* Prevent sections from shrinking too much */
+}
+
+.footer-section.about {
+  flex: 2; /* Allocate more space for the About section */
+  max-width: 50%; /* Limit its maximum width */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Align logo and text horizontally */
+  gap: 0.5rem; /* Space between logo and text */
+}
+
+.logo-image {
+  height: 30px;
+  width: auto;
+  margin-right: 0.5rem;
+  display: block;
+}
+
+.about p {
+  margin-top: 0.5rem; /* Adjust spacing below the logo */
+  line-height: 1.5; /* Improve text readability */
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.copyright {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.footer-section ul li a:hover {
+  color: #f68d7d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-wrap: wrap; /* Allow sections to wrap */
+  }
+
+  .footer-section {
+    flex: 1 1 100%; /* Full width for sections */
+    margin-bottom: 1rem; /* Space between sections */
+  }
+
+  .footer-section.about {
+    max-width: 100%; /* Ensure full width for About on mobile */
+  }
+
+  .logo-container {
+    justify-content: center; /* Center logo and text */
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+}
