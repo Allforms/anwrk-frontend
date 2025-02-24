@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../components/hero";
+import Hero from "../components/Hero";
 import WhyChooseAnwrk from "../components/BodySection1";
 import HowAnwrkWorks from "../components/BodySection2";
 import WhatUsersSay from "../components/BodySection3";
